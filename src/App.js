@@ -32,8 +32,7 @@ const items = [
       { name: "deal-mgmt", label: "Deal Management", onClick },
       { name: "channel-partner", label: "Channel Partner", onClick },
       { name: "customer-credit-profile", label: "Customer Credit Profile", onClick },
-      // {name:'', label:'', onClick},
-      {name:'credit-transaction', label:'Credit Transaction', onClick}
+      { name:'credit-transaction', label:'Credit Transaction', onClick}
     ]
   },
 
@@ -56,7 +55,7 @@ const items = [
       {name:'node-sessions', label:'Node Sessions', onClick}
     ]
   },
-  
+
   "divider",
   {
     name:'rules-mgmt', label:'Rules Management', 
@@ -65,19 +64,18 @@ const items = [
       {name:'hub-rules-config', label:'Hub Rules Configuration', onClick}
     ]
   },
-  
-  "divider",
-  {
-    name:'msg-mgmt', label:'Message Management',
-    item: [
-      {name:'sms-query', label:'SMS Query', onClick},
-    ]
-  },
 
   "divider",
   {
-    name:'user-mgmt', label:'User Management', 
-    item: [
+    name:'msg-mgmt', label:'Message Management',
+    items: [
+      {name:'sms-query', label:'SMS Query', onClick},
+    ]
+  },
+  "divider",
+  {
+    name:'user-mgmt', label:'User Management',
+    items: [
       {name:'change-pwd', label:'Change Password', onClick},
       {name:'provision-user', label:'Provision User', onClick},
       {name:'customer-portal-user', label:'Customer Portal User', onClick}
@@ -98,6 +96,7 @@ const items = [
   {
     name:'about', label:'About', onClick
   },
+
   "divider",
   {
     name:'logout', label:'Logout', onClick
